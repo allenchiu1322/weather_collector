@@ -1,0 +1,3 @@
+ConfigParser
+requests
+mysql-connector-python
