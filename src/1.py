@@ -48,6 +48,7 @@ try:
             # the same data exists, skip insert
             print('- Identical record exists, do nothing and exit.')
         else:
+            # write to database
             sql_insert_query = 'insert into weather_log (city, weather, temperature, timestamp) values ("' + city + '", "' + weather + '", ' + str(temperature) + ', "' + str(dt_object) + '")'
             cursor.execute(sql_insert_query)
             connection.commit()
@@ -66,4 +67,3 @@ finally:
 
 
 
-# write to database
